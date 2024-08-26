@@ -1,5 +1,3 @@
-/sys/a1bw1zXB8k4/Mi98/thing/topo/add_reply
-/sys/a1bw1zXB8k4/Mi98/thing/property/desired/get_reply
 /sys/a1bw1zXB8k4/Mi98/thing/property/desired/get_reply
 /sys/a1bw1zXB8k4/Mi98/thing/topo/get_reply
 /sys/a1bw1zXB8k4/Mi98/thing/topo/get_reply
@@ -15,8 +13,6 @@
 /sys/a1bw1zXB8k4/Mi98/thing/job/get_reply
 /a1bw1zXB8k4/Mi98/user/get
 /a1bw1zXB8k4/Mi98/user/get
-/sys/a1bw1zXB8k4/Mi98/thing/deviceinfo/update_reply
-/sys/a1bw1zXB8k4/Mi98/thing/deviceinfo/update_reply
 /sys/a1bw1zXB8k4/Mi98/thing/config/get_reply
 /sys/a1bw1zXB8k4/Mi98/thing/config/get_reply
 /sys/a1bw1zXB8k4/Mi98/thing/deviceinfo/delete_reply
