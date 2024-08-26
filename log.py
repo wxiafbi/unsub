@@ -7,8 +7,8 @@ import paho.mqtt.enums as mqtt_enums
 
 # 阿里云物联网平台设备三元组
 product_key = "a1bw1zXB8k4"
-device_name = "Mi98"
-device_secret = "290b3479cc2604418db6011596b7e9c8"
+device_name = "Mi90"
+device_secret = "fcb727b358187a7ad8ba2e227561cca4"
 Value_s = (
     "clientId" + device_name + "deviceName" + device_name + "productKey" + product_key
 )
@@ -80,6 +80,7 @@ def on_connect(client, userdata, flags, rc, ling):
     if rc == 0:
         print("Connected to broker")
         # 取消订阅所有topic
+        client.unsubscribe("/sys/a1bw1zXB8k4/Mi98/thing/awss/device/switchap")
         client.unsubscribe("/sys/a1bw1zXB8k4/Mi98/thing/property/desired/get_reply")
         client.unsubscribe("/sys/a1bw1zXB8k4/Mi98/thing/topo/get_reply")
         client.unsubscribe("/sys/a1bw1zXB8k4/Mi98/thing/topo/get_reply")
