@@ -69,6 +69,7 @@ def on_connect(client, userdata, flags, rc,ling):
     else:
         print("Connection failed")
 
+# 订阅回调函数
 
 # 设置连接回调函数
 client.on_connect = on_connect
