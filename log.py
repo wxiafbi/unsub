@@ -11,41 +11,37 @@ device_name = "Mi98"
 device_secret = "290b3479cc2604418db6011596b7e9c8"
 
 
+def generate_credentials(productKey, deviceName, deviceSecret):
+    # 生成客户端ID
+    secure_mode = 3
+    sign_method = "hmacsha1"
+    client_id = f"{deviceName}|securemode={secure_mode},signmethod={sign_method}|"
 
-# 计算密码
-def calculate_password(product_key, device_name, device_secret):
-    def hmac_sha256(key, msg):
-        return hmac.new(key, msg.encode("utf-8"), hashlib.sha256).digest()
+    # 生成用户名
+    username = f"{deviceName}&{productKey}"
 
-    def get_client_id():
-        return device_name + "|securemode=3,signmethod=hmacsha256|"
+    # 生成密码
+    signature = hmac.new(
+        deviceSecret.encode("utf-8"),
+        msg=username.encode("utf-8"),
+        digestmod=hashlib.sha1,
+    ).digest()
+    password = signature.hex()
 
-    def get_username():
-        return device_name + "&" + product_key
-
-    def get_password():
-        content = (
-            "clientId"
-            + device_name
-            + "deviceName"
-            + device_name
-            + "productKey"
-            + product_key
-        )
-        return base64.b64encode(
-            hmac_sha256(device_secret.encode("utf-8"), content)
-        ).decode("utf-8")
-
-    client_id = get_client_id()
-    username = get_username()
-    password = get_password()
-    print("client_id: ", client_id)
-    print("username: ", username)
-    print("password: ", password)
     return client_id, username, password
 
 
-client_id, username, password = calculate_password(
+client_id, username, password = generate_credentials(
+    product_key, device_name, device_secret
+)
+
+print("Client ID:", client_id)
+print("Username:", username)
+print("Password:", password)
+# 计算密码
+
+
+client_id, username, password = generate_credentials(
     product_key, device_name, device_secret
 )
 
@@ -57,17 +53,22 @@ port = 1883
 client = mqtt.Client(
     client_id='Mi98|securemode=2,signmethod=hmacsha1,timestamp=1724677486310|', callback_api_version=mqtt_enums.CallbackAPIVersion.VERSION2
 )
-client.username_pw_set(username, password='B731FEF9FAD6D4F1B920332707CB510A630F19F7')
+# client.username_pw_set(username, password='B731FEF9FAD6D4F1B920332707CB510A630F19F7')
+# client = mqtt.Client(
+#     client_id, callback_api_version=1, callback_api_version_tuple=(2, 0, 0)
+# )
+client.username_pw_set(username, password)
 
 
 # 连接回调函数
-def on_connect(client, userdata, flags, rc,ling):
+def on_connect(client, userdata, flags, rc, ling):
     if rc == 0:
         print("Connected to broker")
         # 取消订阅所有topic
         client.unsubscribe("/sys/a1bw1zXB8k4/Mi98/thing/topo/add_reply")
     else:
         print("Connection failed")
+
 
 # 订阅回调函数
 
