@@ -1,95 +1,50 @@
-/sys/a1bw1zXB8k4/Mi98/thing/topo/add_reply
-/sys/a1bw1zXB8k4/Mi98/thing/property/desired/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/property/desired/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/topo/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/topo/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/event/property/history/post_reply
-/sys/a1bw1zXB8k4/Mi98/thing/event/property/history/post_reply
-/sys/a1bw1zXB8k4/Mi98/thing/service/+
-/sys/a1bw1zXB8k4/Mi98/thing/service/+
-/sys/a1bw1zXB8k4/Mi98/thing/reset
-/sys/a1bw1zXB8k4/Mi98/thing/reset
-/sys/a1bw1zXB8k4/Mi98/thing/sub/unregister_reply
-/sys/a1bw1zXB8k4/Mi98/thing/sub/unregister_reply
-/sys/a1bw1zXB8k4/Mi98/thing/job/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/job/get_reply
-/a1bw1zXB8k4/Mi98/user/get
-/a1bw1zXB8k4/Mi98/user/get
-/sys/a1bw1zXB8k4/Mi98/thing/deviceinfo/update_reply
-/sys/a1bw1zXB8k4/Mi98/thing/deviceinfo/update_reply
-/sys/a1bw1zXB8k4/Mi98/thing/config/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/config/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/deviceinfo/delete_reply
-/sys/a1bw1zXB8k4/Mi98/thing/deviceinfo/delete_reply
-/sys/a1bw1zXB8k4/Mi98/thing/topo/change
-/sys/a1bw1zXB8k4/Mi98/thing/topo/change
-/sys/a1bw1zXB8k4/Mi98/thing/reset_reply
-/sys/a1bw1zXB8k4/Mi98/thing/reset_reply
-/sys/a1bw1zXB8k4/Mi98/thing/job/notify
-/sys/a1bw1zXB8k4/Mi98/thing/job/notify
-/sys/a1bw1zXB8k4/Mi98/thing/bootstrap/notify
-/sys/a1bw1zXB8k4/Mi98/thing/bootstrap/notify
-/sys/a1bw1zXB8k4/Mi98/thing/ota/firmware/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/ota/firmware/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/lan/prefix/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/lan/prefix/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/lan/blacklist/update_reply
-/sys/a1bw1zXB8k4/Mi98/thing/lan/blacklist/update_reply
-/sys/a1bw1zXB8k4/Mi98/thing/disable_reply
-/sys/a1bw1zXB8k4/Mi98/thing/disable_reply
-/sys/a1bw1zXB8k4/Mi98/thing/job/update_reply
-/sys/a1bw1zXB8k4/Mi98/thing/job/update_reply
-/sys/a1bw1zXB8k4/Mi98/thing/lan/prefix/update
-/sys/a1bw1zXB8k4/Mi98/thing/lan/prefix/update
-/sys/a1bw1zXB8k4/Mi98/thing/awss/enrollee/match_reply
-/sys/a1bw1zXB8k4/Mi98/thing/awss/enrollee/match_reply
-/sys/a1bw1zXB8k4/Mi98/thing/cipher/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/cipher/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/service/property/set
-/sys/a1bw1zXB8k4/Mi98/thing/service/property/set
-/sys/a1bw1zXB8k4/Mi98/thing/model/down_raw
-/sys/a1bw1zXB8k4/Mi98/thing/model/down_raw
-/sys/a1bw1zXB8k4/Mi98/thing/config/log/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/config/log/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/topo/delete_reply
-/sys/a1bw1zXB8k4/Mi98/thing/topo/delete_reply
-/ota/device/request/a1bw1zXB8k4/Mi98
-/ota/device/request/a1bw1zXB8k4/Mi98
-/sys/a1bw1zXB8k4/Mi98/thing/awss/enrollee/found_reply
-/sys/a1bw1zXB8k4/Mi98/thing/awss/enrollee/found_reply
-/sys/a1bw1zXB8k4/Mi98/thing/gateway/permit
-/sys/a1bw1zXB8k4/Mi98/thing/gateway/permit
-/sys/a1bw1zXB8k4/Mi98/_thing/service/post_reply
-/sys/a1bw1zXB8k4/Mi98/_thing/service/post_reply
-/sys/a1bw1zXB8k4/Mi98/thing/event/+/post_reply
-/sys/a1bw1zXB8k4/Mi98/thing/event/+/post_reply
-/sys/a1bw1zXB8k4/Mi98/thing/property/desired/delete_reply
-/sys/a1bw1zXB8k4/Mi98/thing/property/desired/delete_reply
-/sys/a1bw1zXB8k4/Mi98/thing/config/push
-/sys/a1bw1zXB8k4/Mi98/thing/config/push
-/sys/a1bw1zXB8k4/Mi98/thing/model/up_raw_reply
-/sys/a1bw1zXB8k4/Mi98/thing/model/up_raw_reply
-/ota/device/upgrade/a1bw1zXB8k4/Mi98
-/ota/device/upgrade/a1bw1zXB8k4/Mi98
-/sys/a1bw1zXB8k4/Mi98/rrpc/request/+
-/sys/a1bw1zXB8k4/Mi98/rrpc/request/+
-/sys/a1bw1zXB8k4/Mi98/thing/sub/register_reply
-/sys/a1bw1zXB8k4/Mi98/thing/sub/register_reply
-/sys/a1bw1zXB8k4/Mi98/thing/config/log/push
-/sys/a1bw1zXB8k4/Mi98/thing/config/log/push
-/sys/a1bw1zXB8k4/Mi98/thing/dynamicTsl/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/dynamicTsl/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/awss/device/switchap
-/sys/a1bw1zXB8k4/Mi98/thing/awss/device/switchap
-/sys/a1bw1zXB8k4/Mi98/thing/awss/enrollee/checkin
-/sys/a1bw1zXB8k4/Mi98/thing/awss/enrollee/checkin
-/sys/a1bw1zXB8k4/Mi98/thing/bootstrap/config/push
-/sys/a1bw1zXB8k4/Mi98/thing/bootstrap/config/push
-/shadow/get/a1bw1zXB8k4/Mi98
-/shadow/get/a1bw1zXB8k4/Mi98
-/sys/a1bw1zXB8k4/Mi98/thing/proxy/provisioning/product_register_reply
-/sys/a1bw1zXB8k4/Mi98/thing/proxy/provisioning/product_register_reply
-/sys/a1bw1zXB8k4/Mi98/thing/service/property/get
-/sys/a1bw1zXB8k4/Mi98/thing/service/property/get
-/sys/a1bw1zXB8k4/Mi98/thing/dsltemplate/get_reply
-/sys/a1bw1zXB8k4/Mi98/thing/dsltemplate/get_reply
+# 构建topic列表
+def build_topic_list(productKey, deviceName):
+    topic_list = []
+    topic_list.append(
+        "/sys/" + productKey + "/" + deviceName + "/thing/model/up_raw_reply"
+    )
+    topic_list.append(
+        "/sys/" + productKey + "/" + deviceName + "/thing/deviceinfo/delete_reply"
+    )
+    topic_list.append(
+        "/sys/" + productKey + "/" + deviceName + "/thing/cipher/get_reply"
+    )
+    topic_list.append("/sys/" + productKey + "/" + deviceName + "/thing/topo/add_reply")
+    topic_list.append(
+        "/sys/" + productKey + "/" + deviceName + "/thing/config/log/get_reply"
+    )
+    topic_list.append("/sys/" + productKey + "/" + deviceName + "/thing/gateway/permit")
+    topic_list.append(
+        "/sys/" + productKey + "/" + deviceName + "/_thing/service/post_reply"
+    )
+    topic_list.append(
+        "/sys/" + productKey + "/" + deviceName + "/thing/lan/blacklist/update_reply"
+    )
+    topic_list.append("/shadow/get/" + productKey + "/" + deviceName)
+    topic_list.append("/sys/" + productKey + "/" + deviceName + "/thing/job/get_reply")
+    topic_list.append("/sys/" + productKey + "/" + deviceName + "/thing/reset_reply")
+    topic_list.append("/sys/" + productKey + "/" + deviceName + "/thing/topo/get_reply")
+    topic_list.append(
+        "/sys/" + productKey + "/" + deviceName + "/thing/service/property/get"
+    )
+    topic_list.append("/sys/" + productKey + "/" + deviceName + "/rrpc/request/+")
+    topic_list.append("/sys/" + productKey + "/" + deviceName + "/thing/disable_reply")
+    topic_list.append(
+        "/sys/" + productKey + "/" + deviceName + "/thing/dsltemplate/get_reply"
+    )
+    topic_list.append(
+        "/sys/" + productKey + "/" + deviceName + "/thing/job/update_reply"
+    )
+    topic_list.append(
+        "/sys/" + productKey + "/" + deviceName + "/thing/lan/prefix/get_reply"
+    )
+    topic_list.append(
+        "/sys/" + productKey + "/" + deviceName + "/thing/config/get_reply"
+    )
+
+    print(topic_list)
+    return topic_list
+
+
+build_topic_list("a1bw1zXB8k4", "Mi206")

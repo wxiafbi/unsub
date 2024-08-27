@@ -7,8 +7,8 @@ import paho.mqtt.enums as mqtt_enums
 
 # 阿里云物联网平台设备三元组
 product_key = "a1bw1zXB8k4"
-device_name = "Mi90"
-device_secret = "fcb727b358187a7ad8ba2e227561cca4"
+device_name = "Mi206"
+device_secret = "7af7877821acf68af3598e8ec5d183f3"
 Value_s = (
     "clientId" + device_name + "deviceName" + device_name + "productKey" + product_key
 )
@@ -80,87 +80,8 @@ def on_connect(client, userdata, flags, rc, ling):
     if rc == 0:
         print("Connected to broker")
         # 取消订阅所有topic
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/awss/device/switchap")
-        print("/sys/a1bw1zXB8k4/{device_name}/thing/awss/device/switchap")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/property/desired/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/topo/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/topo/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/event/property/history/post_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/event/property/history/post_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/service/+")  # 注意：+ 通配符
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/service/+")  # 注意：+ 通配符
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/reset")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/reset")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/sub/unregister_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/sub/unregister_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/job/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/job/get_reply")
-        client.unsubscribe("/a1bw1zXB8k4/{device_name}/user/get")
-        client.unsubscribe("/a1bw1zXB8k4/{device_name}/user/get")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/config/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/config/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/deviceinfo/delete_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/deviceinfo/delete_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/topo/change")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/topo/change")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/reset_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/reset_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/job/notify")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/job/notify")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/bootstrap/notify")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/bootstrap/notify")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/ota/firmware/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/ota/firmware/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/lan/prefix/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/lan/prefix/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/lan/blacklist/update_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/lan/blacklist/update_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/disable_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/disable_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/job/update_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/job/update_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/lan/prefix/update")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/lan/prefix/update")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/awss/enrollee/match_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/awss/enrollee/match_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/cipher/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/cipher/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/service/property/set")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/service/property/set")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/model/down_raw")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/model/down_raw")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/config/log/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/config/log/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/topo/delete_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/topo/delete_reply")
-        client.unsubscribe("/ota/device/request/a1bw1zXB8k4/{device_name}")
-        client.unsubscribe("/ota/device/request/a1bw1zXB8k4/{device_name}")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/awss/enrollee/found_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/awss/enrollee/found_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/gateway/permit")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/gateway/permit")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/_thing/service/post_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/_thing/service/post_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/event/+/post_reply")  # 注意：+ 通配符
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/event/+/post_reply")  # 注意：+ 通配符
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/property/desired/delete_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/property/desired/delete_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/config/push")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/model/up_raw_reply")
-        client.unsubscribe("/ota/device/upgrade/a1bw1zXB8k4/{device_name}")
-        client.unsubscribe("/ota/device/upgrade/a1bw1zXB8k4/{device_name}")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/rrpc/request/+")  # 注意：+ 通配符
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/rrpc/request/+")  # 注意：+ 通配符
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/sub/register_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/config/log/push")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/dynamicTsl/get_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/awss/device/switchap")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/awss/enrollee/checkin")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/bootstrap/config/push")
-        client.unsubscribe("/shadow/get/a1bw1zXB8k4/{device_name}")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/proxy/provisioning/product_register_reply")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/service/property/get")
-        client.unsubscribe("/sys/a1bw1zXB8k4/{device_name}/thing/dsltemplate/get_reply")
+        client.unsubscribe("/sys/+/+/+/+/+")
+        
     else:
         print("Connection failed")
 
