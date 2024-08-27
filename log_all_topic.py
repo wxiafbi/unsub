@@ -7,9 +7,9 @@ import paho.mqtt.enums as mqtt_enums
 import topic_in
 
 # 阿里云物联网平台设备三元组
-product_key = "a1bw1zXB8k4"
-device_name = "Mi175"
-device_secret = "93546702e8522310c861000afc965779"
+product_key = "a1g1PqlfkOo"
+device_name = "Q1180"
+device_secret = "H8eLvRY5gbtJmOofb9RMk1fzLcekbwxd"
 Value_s = (
     "clientId" + device_name + "deviceName" + device_name + "productKey" + product_key
 )
