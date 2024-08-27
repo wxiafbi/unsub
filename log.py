@@ -4,6 +4,7 @@ import hmac
 import base64
 import paho.mqtt.client as mqtt
 import paho.mqtt.enums as mqtt_enums
+import topic_in
 
 # 阿里云物联网平台设备三元组
 product_key = "a1bw1zXB8k4"
@@ -54,7 +55,6 @@ print("Password:", password1)
 # 计算密码
 
 
-
 # MQTT连接参数
 broker = product_key + ".iot-as-mqtt.cn-shanghai.aliyuncs.com"  # 根据实际情况修改区域
 port = 1883
@@ -79,9 +79,13 @@ client.username_pw_set(username1, password1)
 def on_connect(client, userdata, flags, rc, ling):
     if rc == 0:
         print("Connected to broker")
+        topics = topic_in.build_topic_list("a1bw1zXB8k4", "Mi206")
         # 取消订阅所有topic
-        client.unsubscribe("/sys/+/+/+/+/+")
-        
+        # print(topics)
+        for topic in topics:
+            print('正在取消订阅',topic) 
+            client.unsubscribe(topic)
+
     else:
         print("Connection failed")
 
