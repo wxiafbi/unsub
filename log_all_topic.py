@@ -7,9 +7,9 @@ import paho.mqtt.enums as mqtt_enums
 import topic_in
 
 # 阿里云物联网平台设备三元组
-product_key = "a1g1PqlfkOo"
-device_name = "Q1180"
-device_secret = "H8eLvRY5gbtJmOofb9RMk1fzLcekbwxd"
+product_key = "a1bw1zXB8k4"
+device_name = "Mi123-2"
+device_secret = "2d5223e399b3b832b3cf9428dc9676a4"
 Value_s = (
     "clientId" + device_name + "deviceName" + device_name + "productKey" + product_key
 )
@@ -79,7 +79,8 @@ client.username_pw_set(username1, password1)
 def on_connect(client, userdata, flags, rc, ling):
     if rc == 0:
         print("Connected to broker")
-        topics = topic_in.build_topic_list("a1bw1zXB8k4", "Mi206")
+        # topics = topic_in.build_topic_list("a1bw1zXB8k4", "Mi207")
+        topics = topic_in.build_topic_list(product_key, device_name, )
         # 取消订阅所有topic
         # print(topics)
         for topic in topics:
